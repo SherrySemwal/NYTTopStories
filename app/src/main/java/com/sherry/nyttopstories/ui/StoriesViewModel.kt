@@ -25,7 +25,12 @@ class StoriesViewModel @Inject constructor(private val repository: TopStoriesRep
     private val _storyDetailsLiveData = MutableLiveData<StoryResult>()
     val storyDetailsData: LiveData<StoryResult> = _storyDetailsLiveData
 
-    public var webViewLink = ""
+    //To store web link to open a webview which shows more details of story
+    var webViewLink: String? = null
+
+    init {
+        fetchData()
+    }
 
     fun fetchData() = viewModelScope.launch {
         isLoading.postValue(true)

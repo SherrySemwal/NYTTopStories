@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_story_title"
+        style="@style/StoryTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_story"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/lorem" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_author_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="@+id/tv_story_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_story_title"
+        app:layout_constraintEnd_toEndOf="@id/tv_story_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="@tools:sample/full_names" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_story"
+        style="@style/ImageView"
+        android:layout_width="@dimen/story_image_size"
+        android:layout_height="@dimen/story_image_size"
+        android:src="@drawable/ic_no_image"
+        android:transitionName="photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_story_title"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/movies_price_availability"-->
+<!--        style="@style/MoviesPriceAvailability"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text='@{Converter.priceAndAvailabilityToString(movies.price.value + movies.price.currency.component1(), movies.availability)}'-->
+<!--        android:textColor="@{movies.availability ? @color/colorAvailable : @color/colorSoldOut}"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/movies_imageView"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/movies_subtitle"-->
+<!--        tools:text="@tools:sample/full_names" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

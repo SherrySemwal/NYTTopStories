@@ -1,7 +1,7 @@
 package com.sherry.nyttopstories.model
 
 data class StoryResult(
-    val `abstract`: String,
+    val _abstract: String,
     val byline: String,
     val created_date: String,
     val des_facet: List<String>,

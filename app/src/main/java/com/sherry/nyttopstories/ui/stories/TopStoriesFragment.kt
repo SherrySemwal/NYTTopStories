@@ -46,7 +46,6 @@ class TopStoriesFragment : Fragment() {
             findNavController().navigate(R.id.action_storiesFragment_to_storyDetailsFragment)
         }
         binding.recyclerView.adapter = adapter
-        storiesViewModel.fetchData()
     }
 
     private fun initObserver() {

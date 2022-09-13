@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ImageView">
+        <item name="android:layout_margin">@dimen/dimen_16</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CardViewStyle" parent="CardView">
+        <item name="android:background">@color/cardViewColor</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:layout_margin">@dimen/dimen_6</item>
+        <item name="cardCornerRadius">@dimen/dimen_8</item>
+        <item name="cardBackgroundColor">@color/cardViewColor</item>
+        <item name="cardElevation">@dimen/dimen_6</item>
+    </style>
+
+    <style name="StoryTitle">
+        <item name="android:layout_marginLeft">@dimen/dimen_16</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16</item>
+        <item name="android:layout_marginRight">@dimen/dimen_8</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/txt_title</item>
+    </style>
+
+    <style name="StorySubtitle">
+        <item name="android:layout_marginLeft">@dimen/dimen_8</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/txt_sub_title</item>
+    </style>
+
+</resources>
