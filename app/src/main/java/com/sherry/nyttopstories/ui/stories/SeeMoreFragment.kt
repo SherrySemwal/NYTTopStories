@@ -1,12 +1,11 @@
 package com.sherry.nyttopstories.ui.stories
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.sherry.nyttopstories.R
 import com.sherry.nyttopstories.databinding.FragmentSeeMoreBinding
 import com.sherry.nyttopstories.ui.StoriesViewModel
 

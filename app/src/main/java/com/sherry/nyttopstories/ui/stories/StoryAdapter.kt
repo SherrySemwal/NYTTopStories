@@ -1,10 +1,8 @@
 package com.sherry.nyttopstories.ui.stories
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.sherry.nyttopstories.databinding.ItemTopStoryBinding
 import com.sherry.nyttopstories.model.StoryResult
 import com.sherry.nyttopstories.utils.loadImageFromURL
